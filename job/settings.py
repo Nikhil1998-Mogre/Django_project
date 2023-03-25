@@ -77,11 +77,11 @@ WSGI_APPLICATION = "job.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'backendcourse',
-        'USER': 'mysuperuser',
-        'PASSWORD': 'mysuperuser',
-        'HOST': 'backendcourse.c15x8vjssw4h.ap-northeast-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'nikhil2',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 
@@ -127,15 +127,3 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-
-
-AWS_ACCESS_KEY_ID = 'AKIASHKBHM6KIODGD4V4'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'backendcourse'
-AWS_S3_SIGNATURE_NAME = 's3v4',
-AWS_S3_REGION_NAME = 'ap-northeast-1'
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL =  None
-AWS_S3_VERITY = True
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
